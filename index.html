@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshitha Gangireddy - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6b7280, #1f2937);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #1f2937;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1f2937;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #60a5fa;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid, .projects-grid, .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 6px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+
+        .education, .certifications, .achievements {
+            margin-top: 1rem;
+        }
+
+        .education div, .certifications li, .achievements li {
+            margin-bottom: 0.8rem;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-grid, .projects-grid, .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joshitha Gangireddy</h1>
+        <p>Front-End Developer | UI/UX Designer | Data Science Enthusiast</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A highly motivated and detail-oriented front-end developer with experience in Angular and a strong foundation in software development. Passionate about leveraging technology to build innovative solutions. Currently interning as a front-end developer, with prior experience in UI/UX design. My long-term goal is to pursue a career in engineering management.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <p>Java, C, Python, SQL</p>
+                </div>
+                <div class="card">
+                    <h3>Web Technologies</h3>
+                    <p>HTML, CSS, Bootstrap, Angular</p>
+                </div>
+                <div class="card">
+                    <h3>Development Tools</h3>
+                    <p>Git, Azure DevOps, Figma</p>
+                </div>
+                <div class="card">
+                    <h3>Data Visualization</h3>
+                    <p>Power BI</p>
+                </div>
+                <div class="card">
+                    <h3>Other Skills</h3>
+                    <p>Agile Methodology, CI/CD Pipelines</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Hepato Prognostic Assessment</h3>
+                    <p>Developed machine learning models using Support Vector Machines and Random Forest to reduce Time To Diagnosis (TTD) for liver diseases by 20%. Evaluated performance using precision, accuracy, recall, f-1 score, and specificity.</p>
+                </div>
+                <div class="card">
+                    <h3>Currency Converter</h3>
+                    <p>Built a dynamic Java application for real-time currency conversion using APIs. Features a user-friendly GUI, object-oriented design, and robust error handling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="card">
+                    <h3>Front-End Developer (Intern)</h3>
+                    <p>Jan 2025 - Present</p>
+                    <p>Developing modular UI components in Angular with RxJS. Collaborating on RESTful API integration and optimizing CI/CD pipelines using Azure DevOps.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Designer (Intern)</h3>
+                    <p>Feb 2024 - Mar 2024</p>
+                    <p>Designed high-fidelity wireframes and prototypes using Figma, adhering to Material Design guidelines. Collaborated with developers for responsive web components.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="education">
+                <div>
+                    <h3>BV Raju Institute Of Technology</h3>
+                    <p>Oct 2022 - Present | GPA: 8.37/10.0</p>
+                </div>
+                <div>
+                    <h3>Sri Chaitanya Junior College</h3>
+                    <p>May 2022 | Marks: 9.71/10.0</p>
+                </div>
+                <div>
+                    <h3>Sri Chaitanya Techno School</h3>
+                    <p>May 2020 | GPA: 10.0/10.0</p>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Data Science and Machine Learning Internship (Edureka)</li>
+                    <li>Mastered Python (Multilingual Course)</li>
+                    <li>Python Intermediate Level Certification</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul class="achievements">
+                <li>Secured 10.0 GPA in 10th Grade</li>
+                <li>Achieved 971/1000 in Intermediate</li>
+                <li>Secured Gold Medal in Knowledge Assessment Test</li>
+                <li>Attended Women in Data Science Workshop at Indian School of Business, Hyderabad</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <p>Contact Me: <a href="mailto:gangireddyjoshitha@gmail.com">gangireddyjoshitha@gmail.com</a> | Phone: 7995545515</p>
+        <p>Connect: <a href="https://linkedin.com/in/JoshithaGangireddy">LinkedIn</a> | <a href="https://github.com/Joshitha1705">GitHub</a></p>
+        <p>&copy; 2025 Joshitha Gangireddy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
